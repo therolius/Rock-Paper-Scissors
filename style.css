@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Koulen', cursive;
+}
+.container{
+    background: #444;
+    width: 100vw; height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5rem;
+}
+.enemy-title{
+    color: rgb(102, 0, 0);
+}
+.you-title{
+    color: rgb(0, 131, 11);
+}
+h1{
+    color:white;
+}
+.area{
+    display: flex;
+    gap: 50px;
+}
+#result{
+    height: 64px;
+    width: auto;
+    font-size: 1.8rem;
+}
+.score{
+    font-size: 35px;
+}
+.area > p{
+    width: 300px;
+    text-align: center;
+    color: rgb(180, 180, 180);
+    font-size: 1.8rem;
+}
+.enemy > p{
+    cursor: not-allowed;
+}
+.you > p{
+    cursor: pointer;
+}
+.you > p:hover{
+    color:rgb(174, 0, 255)
+}
+
+.win{
+    color:rgb(0, 131, 11) !important;
+}
+.lose{
+    color: rgb(102, 0, 0) !important;
+}
+.draw{
+    color:rgb(252, 203, 68) !important;
+}
