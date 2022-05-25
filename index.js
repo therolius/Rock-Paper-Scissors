@@ -16,6 +16,7 @@ const draw = () =>{
     result.classList.toggle('draw');
     setTimeout(() => {
         result.classList.toggle('draw');
+        result.innerHTML = "";
     }, 1000);
 }
 
@@ -90,16 +91,16 @@ for(let choice of yourChoices){
                 
                 //You
                 let yourPick = choice.getAttribute("value");
-                choice.style.color = "rgb(174, 0, 255)";
+                choice.classList.add('win');
                 setTimeout(() => {
-                    choice.style.color = "rgb(180, 180, 180)";
+                    choice.classList.remove('win');
                 }, 1000);
         
 
                 //Enemy
-                enemyChoices[enemyPick].style.color = "rgb(174, 0, 255)";
+                enemyChoices[enemyPick].classList.add('win');
                 setTimeout(() => {
-                    enemyChoices[enemyPick].style.color = "rgb(180, 180, 180)";
+                    enemyChoices[enemyPick].classList.remove('win');
                 }, 1000);
                 //Result
 
